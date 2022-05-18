@@ -8,12 +8,17 @@ function onFormSubmit(event) {
     const {
         elements: { email, password }
     } = event.currentTarget;
-
+    const dataBase = {};
     if (email.value === "" || password.value === "") {
         alert(`Please fill in all fields`);
-    } 
-        console.log(`{Email: ${email.value}, Password: ${password.value}}`); 
-    event.currentTarget.reset(); 
+    } else {
+        dataBase.email = email.value;
+        dataBase.password = password.value;
+        event.currentTarget.reset(); 
+    }
+
+        console.log(dataBase); 
+    
         // очистит поля от заполненной информации - reset()
 }
 

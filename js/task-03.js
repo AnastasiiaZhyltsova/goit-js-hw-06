@@ -33,3 +33,5 @@ const galleryList = document.querySelector('.gallery').insertAdjacentHTML("befor
 // });
 
 // galleryList.insertAdjacentHTML("afterend", galleryElements.join(''));
+
+
